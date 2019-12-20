@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+        <form  onsubmit="return validation()" action="#">
+
+                    <label>First Name</label>
+                    <input type="text" id="fname">
+                    <input type="submit">
+        </form>
+        <script>
+            function validation() {
+                var fname = document.getElementById("fname").value;
+                if(fname == "") {
+                    alert("Enter fname");
+                    return false;
+                }
+            }
+        </script>
+</body>
+</html>
